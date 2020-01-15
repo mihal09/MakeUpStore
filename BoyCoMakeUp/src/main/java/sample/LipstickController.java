@@ -1,21 +1,13 @@
-package sample;
+package main.java.sample;
 
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
-import javafx.scene.control.Button;
-import sun.security.ssl.Debug;
 
-import java.io.IOException;
-import java.lang.reflect.Field;
 import java.sql.*;
 
 
@@ -74,16 +66,14 @@ public class LipstickController {
             stmt.setFloat(7, Float.parseFloat(fieldPrice.getText()));
 
             ResultSet rs = stmt.executeQuery();
-//            Statement stmt = conn.createStatement();
-//            String testquery = "Select * from colors";
-//            ResultSet res = stmt.executeQuery(testquery);
-//            int rowCount = 0;
-//            while(res.next()){
-//                String name  = res.getString("name");
-//                String id  = res.getString("color_id");
-//                ++rowCount;
-//                System.out.println(id + " : " + name);
-//            }
-    } catch(SQLException ex) {ex.printStackTrace();}
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle(null);
+            alert.setHeaderText(null);
+            alert.setContentText("Lipstick added!");
+
+            alert.showAndWait();
+
+            alert.showAndWait();
+    } catch(Exception e) {e.printStackTrace();}
     }
 }
