@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <TextField id="fieldProductID" layoutX="181.0" layoutY="61.0" prefHeight="39.0" prefWidth="184.0" text="" />
+    <Button id="buttonAddProduct" layoutX="396.0" layoutY="118.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="148.0" text="Add Product" />
+    <Button id="buttonAcceptDelivery" layoutX="396.0" layoutY="271.0" mnemonicParsing="false" text="Accept Delivery" />
+    <Label id="labelProductID" layoutX="52.0" layoutY="67.0" text="Product ID" />
+    <Label id="labelQuantity" layoutX="52.0" layoutY="130.0" text="Quantity" />
+    <TextField id="fieldQuantity" layoutX="181.0" layoutY="118.0" prefHeight="39.0" prefWidth="184.0" text="" />
+    <Label id="labelDeliveryDate" layoutX="52.0" layoutY="277.0" text="Delivery Date" />
+      <DatePicker id="fieldDeliveryDate" layoutX="181.0" layoutY="271.0" prefHeight="39.0" prefWidth="184.0" />
+  </children>
+</AnchorPane>

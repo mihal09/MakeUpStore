@@ -5,8 +5,14 @@
 
 <AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.sample.Main">
     <children>
-      <Button id="buttonAddLipstick" layoutX="104.0" layoutY="210.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="119.0" text="Add Lipstick" />
-      <Button id="buttonAddMascara" layoutX="290.0" layoutY="210.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="119.0" text="Add Mascara" />
-      <Button id="buttonAddConcealer" layoutX="481.0" layoutY="210.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="119.0" text="Add Concealer" />
+      <Button id="buttonAddLipstick" layoutX="146.0" layoutY="33.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="119.0" text="Add Lipstick" />
+      <Button id="buttonAddMascara" layoutX="283.0" layoutY="33.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="119.0" text="Add Mascara" />
+      <Button id="buttonAddConcealer" layoutX="418.0" layoutY="33.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="119.0" text="Add Concealer" />
+      <Button id="buttonAddClient" layoutX="205.0" layoutY="102.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="119.0" text="Add Client" />
+      <Button id="buttonAddBrand" layoutX="358.0" layoutY="102.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="119.0" text="Add Brand" />
+      <Button id="buttonCancelUpdateDelivery" layoutX="146.0" layoutY="153.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="179.0" text="Cancel/Update Delivery" />
+      <Button id="buttonCancelUpdateSale" layoutX="358.0" layoutY="153.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="179.0" text="Cancel/Update Sale" />
+      <Button id="buttonPlanDelivery" layoutX="147.0" layoutY="199.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="179.0" text="Plan Delivery" />
+      <Button id="buttonPlanSale" layoutX="359.0" layoutY="199.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="179.0" text="Plan Sale" />
     </children>
 </AnchorPane>

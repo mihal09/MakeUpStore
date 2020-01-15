@@ -1,4 +1,4 @@
-package main.java.sample;
+package main.java.sample.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -7,25 +7,25 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import main.java.sample.Database;
 
 import java.sql.*;
 
 
-public class MascaraController {
+public class ConcealerController {
 
     @FXML
     Button buttonSubmit;
     @FXML
     TextField fieldName, fieldPrice, fieldBrandID, fieldColorID, fieldFillWeight;
     @FXML
-    ChoiceBox fieldBrush, fieldEffect;
+    ChoiceBox fieldUndertone, fieldCoverage;
 
-    public MascaraController(Parent root) {
+    public ConcealerController(Parent root) {
 
         buttonSubmit = (Button) root.lookup("#buttonSubmit");
-
-        fieldBrush = (ChoiceBox) root.lookup("#fieldBrush");
-        fieldEffect = (ChoiceBox) root.lookup("#fieldEffect");
+        fieldUndertone = (ChoiceBox) root.lookup("#fieldUndertone");
+        fieldCoverage = (ChoiceBox) root.lookup("#fieldCoverage");
 
         fieldName = (TextField) root.lookup("#fieldName");
         fieldPrice = (TextField) root.lookup("#fieldPrice");
@@ -37,26 +37,26 @@ public class MascaraController {
         buttonSubmit.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                add_mascara();
+                add_concealer();
             }
         });
 
         //Stage stage = Main.stage;
         Stage stage = new Stage();
-        stage.setTitle("Add mascara");
+        stage.setTitle("Add concealer");
         stage.setScene(new Scene(root));
         stage.show();
     }
 
-    private void add_mascara(){
+    private void add_concealer(){
         try (
                 Connection conn = Database.getInstance().getConnection()
         ) {
-            String query = "{CALL add_mascara(?,?,?,?,?,?,?)}";
+            String query = "{CALL add_concealer(?,?,?,?,?,?,?)}";
             CallableStatement stmt = conn.prepareCall(query);
             stmt.setInt(1, Integer.parseInt(fieldColorID.getText()));
-            stmt.setString(2, fieldBrush.getValue().toString());
-            stmt.setString(3, fieldEffect.getValue().toString());
+            stmt.setString(2, fieldUndertone.getValue().toString());
+            stmt.setString(3, fieldCoverage.getValue().toString());
             stmt.setInt(4,Integer.parseInt(fieldFillWeight.getText()));
             stmt.setInt(5, Integer.parseInt(fieldBrandID.getText()));
             stmt.setString(6, fieldName.getText());
@@ -66,7 +66,7 @@ public class MascaraController {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle(null);
             alert.setHeaderText(null);
-            alert.setContentText("Mascara added!");
+            alert.setContentText("Concealer added!");
             alert.showAndWait();
         } catch(Exception e) {
             Alert alert = new Alert(Alert.AlertType.WARNING);

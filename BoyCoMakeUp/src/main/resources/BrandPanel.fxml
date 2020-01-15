@@ -7,12 +7,13 @@
 
 <AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.sample.Main">
     <children>
-      <Button fx:id="buttonSubmit" layoutX="310.0" layoutY="250.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="118.0" text="Add brand" />
+      <Button id="buttonSubmit" fx:id="buttonSubmit" layoutX="310.0" layoutY="250.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="118.0" text="Add brand" />
       <Text layoutX="246.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
       <TextField id="fieldAddress" layoutX="322.0" layoutY="170.0" />
       <Text layoutX="246.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
       <TextField id="fieldName" layoutX="322.0" layoutY="87.0" />
       <Text layoutX="246.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIP" />
       <TextField id="fieldNIP" layoutX="322.0" layoutY="127.0" />
+      <Button id="buttonCheckNIP" fx:id="buttonSubmit1" layoutX="488.0" layoutY="127.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="102.0" text="Check NIP" />
     </children>
 </AnchorPane>

@@ -4,6 +4,8 @@ import java.sql.*;
 public class Database {
     private static Database instance;
     private Connection connection;
+    private String user;
+    private String password;
 
     private Database(){}
 
@@ -14,6 +16,8 @@ public class Database {
     }
 
     public void setConnection(String user, String password){
+        this.user = user;
+        this.password = password;
         try {
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/makeup", user, password);
         } catch (SQLException e) {
@@ -23,6 +27,12 @@ public class Database {
     }
 
     public Connection getConnection(){
+        try {
+            if(connection.isClosed())
+                connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/makeup", user, password);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return connection;
     }
 

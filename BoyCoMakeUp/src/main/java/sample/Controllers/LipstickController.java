@@ -1,4 +1,4 @@
-package main.java.sample;
+package main.java.sample.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -7,6 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import main.java.sample.Database;
 
 import java.sql.*;
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="labelUserID" layoutX="62.0" layoutY="256.0" text="User ID" />
+      <Label id="labelNewRole" layoutX="60.0" layoutY="431.0" text="New Role" />
+      <Label layoutX="70.0" layoutY="341.0" />
+      <TextField id="fieldUserIDChangePermission" layoutX="213.0" layoutY="362.0" />
+      <TextField id="fieldChangePermission" layoutX="213.0" layoutY="425.0" />
+      <Button id="buttonAddUser" layoutX="492.0" layoutY="75.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="176.0" text="Add User" />
+      <Button id="buttonRemoveUser" layoutX="496.0" layoutY="250.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="176.0" text="Remove User" />
+      <Button id="buttonChangePermission" layoutX="496.0" layoutY="395.0" mnemonicParsing="false" text="Change Permission" />
+      <Label id="labelUserID" layoutX="63.0" layoutY="368.0" text="User ID" />
+      <Label id="labelRole" layoutX="62.0" layoutY="140.0" text="Role" />
+      <TextField id="fieldRole" layoutX="213.0" layoutY="134.0" />
+      <TextField id="fieldUserIDRemoveUser" layoutX="213.0" layoutY="250.0" />
+      <Label id="labelLogin" layoutX="62.0" layoutY="22.0" text="Login" />
+      <Label id="labelPassword" layoutX="63.0" layoutY="81.0" text="Password" />
+      <TextField id="fieldLogin" layoutX="213.0" layoutY="16.0" />
+      <TextField id="fieldPassword" layoutX="213.0" layoutY="75.0" />
+   </children>
+</AnchorPane>

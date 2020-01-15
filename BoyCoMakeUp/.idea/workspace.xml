@@ -2,36 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_5_1_48.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sample/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_5_1_40.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sample/Controllers/BrandController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sample/Controllers/CancelUpdateDeliveryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sample/Controllers/CancelUpdateSaleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sample/Controllers/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sample/Controllers/PlanDeliveryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sample/Controllers/PlanSaleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/CancelUpdateDeliveryPanel.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/CancelUpdateSalePanel.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/PlanDeliveryPanel.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/PlanSalePanel.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoyCoMakeUp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BoyCoMakeUp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/BrandPanel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/ClientPanel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/ConcealerPanel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/LipstickPanel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/MascaraPanel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/admin.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/AdminPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/ConcealerController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/ConcealerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/LipstickController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/LipstickController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/Main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/Main$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/MascaraController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/MascaraController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/ConcealerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/ConcealerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/LipstickController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/LipstickController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/ConcealerController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/ConcealerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/LipstickController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/LipstickController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/Main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/Main$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/MascaraController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/MascaraController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/resources/BrandPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/resources/BrandPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/resources/ClientPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/resources/ClientPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/resources/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/resources/admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/ConcealerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/Controllers/ConcealerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/LipstickController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/Controllers/LipstickController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/MascaraController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MascaraController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ConcealerPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ConcealerPanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/MascaraPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MascaraPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/MascaraController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/Controllers/MascaraController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/BrandPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/BrandPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ClientPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ClientPanel.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/triggers.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../database/triggers.sql" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,11 +92,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+            <state relative-caret-position="189">
+              <caret line="160" selection-start-line="160" selection-end-line="160" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#1104:1530" />
+                <element signature="class#1576:2004" />
+                <element signature="class#2048:2472" />
+                <element signature="class#2660:3100" />
+                <element signature="class#3144:3584" />
+                <element signature="class#4147:4613" />
+                <element signature="class#4663:5121" />
+                <element signature="class#5177:5643" />
+                <element signature="class#5693:6151" />
+                <element signature="e#6278#6279#0" expanded="true" />
+                <element signature="e#6306#6307#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.48/mysql-connector-java-5.1.48.jar!/com/mysql/jdbc/SQLError.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="337" selection-start-line="337" selection-end-line="337" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controllers/CancelUpdateSaleController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="83" column="3" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controllers/PlanDeliveryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
+              <folding>
+                <element signature="class#1134:1292" />
+                <element signature="e#1404#1405#0" expanded="true" />
+                <element signature="e#1449#1450#0" expanded="true" />
+                <element signature="class#1340:1493" />
+                <element signature="e#1610#1611#0" expanded="true" />
+                <element signature="e#1650#1651#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controllers/PlanSaleController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="94" column="15" selection-start-line="94" selection-start-column="15" selection-end-line="94" selection-end-column="15" />
+              <folding>
+                <element signature="e#3341#3601#1" />
+                <element signature="e#2949#3255#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controllers/ConcealerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,102 +176,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/MascaraController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controllers/CancelUpdateDeliveryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="88">
+              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+              <folding>
+                <element signature="class#1336:1496" />
+                <element signature="e#1077#1078#0" expanded="true" />
+                <element signature="e#1126#1127#0" expanded="true" />
+                <element signature="e#1287#1288#0" expanded="true" />
+                <element signature="e#1336#1337#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controllers/LipstickController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controllers/MascaraController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1160#1161#0" expanded="true" />
                 <element signature="e#1205#1206#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.48/mysql-connector-java-5.1.48.jar!/com/mysql/jdbc/ConnectionImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="2688" selection-start-line="2688" selection-end-line="2688" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Database.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-              <folding>
-                <element signature="e#645#646#0" expanded="true" />
-                <element signature="e#683#684#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConcealerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1181#1182#0" expanded="true" />
-                <element signature="e#1227#1228#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/ConcealerPanel.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="34" column="96" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/MascaraPanel.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="32" column="94" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/admin.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/LipstickPanel.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="32" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/LipstickController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="55" column="72" selection-start-line="55" selection-start-column="72" selection-end-line="55" selection-end-column="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -220,7 +235,14 @@
       <find>connec</find>
       <find>conceal</find>
       <find>lipstic</find>
+      <find>Lisp</find>
+      <find>brand</find>
       <find>lips</find>
+      <find>client</find>
+      <find>deli</find>
+      <find>deliv</find>
+      <find>add pr</find>
+      <find>check</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -244,14 +266,21 @@
         <option value="$PROJECT_DIR$/src/sample/LipstickController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/ConcealerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/LipstickController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/MascaraController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ConcealerPanel.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/MascaraPanel.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/admin.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/ClientController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/Database.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/BrandController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/Controllers/BrandController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/Controllers/CancelUpdateDeliveryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/Controllers/CancelUpdateSaleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/Controllers/PlanDeliveryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/Controllers/PlanSaleController.java" />
       </list>
     </option>
   </component>
@@ -317,6 +346,14 @@
               <item name="BoyCoMakeUp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BoyCoMakeUp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BoyCoMakeUp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -340,7 +377,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579094511024" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579108726449" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -355,6 +392,10 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\BoyCoMakeUp\BoyCoMakeUp\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="main.java.sample.Controllers" />
+      <recent name="main.java.sample" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="sample" />
@@ -465,7 +506,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21744967" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21744967" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -475,7 +516,7 @@
       <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32577905" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27903682" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -565,58 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConcealerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1227#1228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/LipstickController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="55" column="72" selection-start-line="55" selection-start-column="72" selection-end-line="55" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.48/mysql-connector-java-5.1.48.jar!/com/mysql/jdbc/ConnectionImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="2688" selection-start-line="2688" selection-end-line="2688" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/MascaraController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1160#1161#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ConcealerPanel.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
@@ -641,12 +630,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.48/mysql-connector-java-5.1.48.jar!/com/mysql/jdbc/ConnectionImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="302">
+          <caret line="2688" selection-start-line="2688" selection-end-line="2688" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/javafx-src.zip!/com/sun/javafx/event/BasicEventDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controllers/BrandController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controllers/LipstickController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controllers/MascaraController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1205#1206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controllers/ConcealerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controllers/CancelUpdateDeliveryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding>
+            <element signature="class#1336:1496" />
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1126#1127#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/PlanDeliveryPanel.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controllers/CancelUpdateSaleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="83" column="3" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.48/mysql-connector-java-5.1.48.jar!/com/mysql/jdbc/SQLError.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="337" selection-start-line="337" selection-end-line="337" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controllers/PlanDeliveryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
+          <folding>
+            <element signature="class#1134:1292" />
+            <element signature="e#1404#1405#0" expanded="true" />
+            <element signature="e#1449#1450#0" expanded="true" />
+            <element signature="class#1340:1493" />
+            <element signature="e#1610#1611#0" expanded="true" />
+            <element signature="e#1650#1651#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="160" selection-start-line="160" selection-end-line="160" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#1104:1530" />
+            <element signature="class#1576:2004" />
+            <element signature="class#2048:2472" />
+            <element signature="class#2660:3100" />
+            <element signature="class#3144:3584" />
+            <element signature="class#4147:4613" />
+            <element signature="class#4663:5121" />
+            <element signature="class#5177:5643" />
+            <element signature="class#5693:6151" />
+            <element signature="e#6278#6279#0" expanded="true" />
+            <element signature="e#6306#6307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controllers/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="64" column="56" lean-forward="true" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="56" />
+          <folding>
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controllers/PlanSaleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="94" column="15" selection-start-line="94" selection-start-column="15" selection-end-line="94" selection-end-column="15" />
+          <folding>
+            <element signature="e#3341#3601#1" />
+            <element signature="e#2949#3255#0" />
           </folding>
         </state>
       </provider>

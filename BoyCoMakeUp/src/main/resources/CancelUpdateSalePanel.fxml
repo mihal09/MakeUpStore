@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <Button id="buttonUpdateSale" layoutX="390.0" layoutY="161.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="162.0" text="Update Sale" />
+    <Button id="buttonCancelSale" layoutX="390.0" layoutY="233.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="162.0" text="Cancel Sale" />
+    <Label id="labelSaleID" layoutX="53.0" layoutY="200.0" text="Sale ID" />
+    <TextField id="fieldSaleID" layoutX="182.0" layoutY="194.0" prefHeight="21.0" prefWidth="147.0" text="" />
+  </children>
+</AnchorPane>
