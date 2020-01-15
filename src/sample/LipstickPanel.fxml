@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+    <children>
+        <Button id="buttonSubmit" layoutX="114.0" layoutY="335.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="118.0" text="Add lipstick" />
+      <TextField id="fieldColorID" layoutX="115.0" layoutY="139.0" />
+      <Text layoutX="42.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color ID" />
+      <ChoiceBox id="fieldFormula" layoutX="114.0" layoutY="180.0" prefWidth="150.0">
+        <items>
+          <FXCollections fx:factory="observableArrayList">
+            <String fx:id="liquid" fx:value="liquid" />
+            <String fx:id="cream" fx:value="cream" />
+            <String fx:id="gloss" fx:value="gloss" />
+          </FXCollections>
+        </items>
+      </ChoiceBox>
+      <Text layoutX="42.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formula" />
+      <ChoiceBox id="fieldFinish" layoutX="114.0" layoutY="221.0" prefWidth="150.0">
+        <items>
+          <FXCollections fx:factory="observableArrayList">
+            <String fx:id="matte" fx:value="matte" />
+            <String fx:id="satin" fx:value="satin" />
+            <String fx:id="glossy" fx:value="glossy" />
+          </FXCollections>
+        </items>
+      </ChoiceBox>
+      <Text layoutX="42.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Finish" />
+      <Text layoutX="42.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill weight" />
+      <TextField id="fieldFillWeight" layoutX="115.0" layoutY="265.0" />
+      <Text layoutX="42.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand ID" />
+      <TextField id="fieldBrandID" layoutX="115.0" layoutY="103.0" />
+      <Text layoutX="42.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <TextField id="fieldName" layoutX="115.0" layoutY="20.0" />
+      <Text layoutX="42.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+      <TextField id="fieldPrice" layoutX="115.0" layoutY="60.0" />
+    </children>
+</AnchorPane>
