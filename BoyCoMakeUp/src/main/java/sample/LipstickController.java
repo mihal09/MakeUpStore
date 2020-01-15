@@ -53,7 +53,7 @@ public class LipstickController {
 
     private void add_lipstick(){
         try (
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/makeup", "root", "haslo1");
+                Connection conn = Database.getInstance().getConnection()
         ) {
             String query = "{CALL add_lipstick(?,?,?,?,?,?,?)}";
             CallableStatement stmt = conn.prepareCall(query);
@@ -70,10 +70,14 @@ public class LipstickController {
             alert.setTitle(null);
             alert.setHeaderText(null);
             alert.setContentText("Lipstick added!");
-
             alert.showAndWait();
-
+    } catch(Exception e) {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle(null);
+            alert.setHeaderText("Error");
+            alert.setContentText("Something went wrong, make sure all fields are valid!");
             alert.showAndWait();
-    } catch(Exception e) {e.printStackTrace();}
+            e.printStackTrace();
+        }
     }
 }

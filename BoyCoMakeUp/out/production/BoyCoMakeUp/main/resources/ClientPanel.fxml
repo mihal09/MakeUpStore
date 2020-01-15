@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.sample.Main">
     <children>
       <Button fx:id="buttonSubmit" layoutX="310.0" layoutY="250.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="118.0" text="Add brand" />
       <Text layoutX="246.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />

@@ -2,36 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_5_1_40.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_5_1_48.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sample/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_5_1_40.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BoyCoMakeUp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BoyCoMakeUp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/BrandPanel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/ClientPanel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/ConcealerPanel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/LipstickController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/LipstickController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/LipstickController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/LipstickController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/LipstickPanel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/MascaraPanel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/admin.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/AdminPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/BrandPanel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ClientPanel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ConcealerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ConcealerPanel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/LipstickController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/LipstickPanel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MascaraController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MascaraPanel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/admin.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/BrandPanel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/ClientPanel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/ConcealerPanel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/LipstickPanel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/MascaraPanel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/admin.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/main/java/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/AdminPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/ConcealerController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/ConcealerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/LipstickController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/LipstickController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/Main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/Main$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/MascaraController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoyCoMakeUp/sample/MascaraController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/ConcealerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/ConcealerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/LipstickController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/LipstickController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/MascaraController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MascaraController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ConcealerPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ConcealerPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/MascaraPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MascaraPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,11 +88,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="132">
+              <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,11 +100,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/MascaraController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="131">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1160#1161#0" expanded="true" />
+                <element signature="e#1205#1206#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.48/mysql-connector-java-5.1.48.jar!/com/mysql/jdbc/ConnectionImpl.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="2688" selection-start-line="2688" selection-end-line="2688" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Database.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+              <folding>
+                <element signature="e#645#646#0" expanded="true" />
+                <element signature="e#683#684#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,69 +139,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConcealerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+            <state relative-caret-position="408">
+              <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1181#1182#0" expanded="true" />
+                <element signature="e#1227#1228#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/LipstickController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/AdminPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/javafx-src.zip!/com/sun/javafx/application/LauncherImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="327" selection-start-line="327" selection-end-line="327" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/sql/DriverManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="246" selection-start-line="246" selection-end-line="246" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/ConcealerPanel.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            <state relative-caret-position="338">
+              <caret line="34" column="96" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/MascaraPanel.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="32" column="94" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/admin.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -185,6 +186,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
               <caret line="25" column="32" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/LipstickController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="55" column="72" selection-start-line="55" selection-start-column="72" selection-end-line="55" selection-end-column="72" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -203,6 +216,11 @@
       <find>button</find>
       <find>field</find>
       <find>fieldFin</find>
+      <find>Concealer</find>
+      <find>connec</find>
+      <find>conceal</find>
+      <find>lipstic</find>
+      <find>lips</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -226,6 +244,13 @@
         <option value="$PROJECT_DIR$/src/sample/LipstickController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/Database.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/ConcealerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/LipstickController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/MascaraController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/ConcealerPanel.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/MascaraPanel.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/admin.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/Main.java" />
       </list>
     </option>
@@ -315,17 +340,20 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579090005661" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579094511024" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\BoyCoMakeUp\BoyCoMakeUp\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\BoyCoMakeUp\BoyCoMakeUp\src\main\resources" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
@@ -364,9 +392,8 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <option name="MAIN_CLASS_NAME" value="main.java.sample.Main" />
       <module name="BoyCoMakeUp" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
@@ -438,7 +465,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21744967" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21744967" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -447,8 +474,8 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33002833" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32577905" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -459,7 +486,7 @@
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3286119" />
       <window_info anchor="bottom" id="CheckStyle" order="14" />
       <window_info anchor="bottom" id="Statistic" order="15" />
       <window_info anchor="bottom" id="Terminal" order="16" />
@@ -486,28 +513,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/admin.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/MascarasPanel.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/LipstickPanel.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -532,47 +543,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/LipstickController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/AdminPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/LipstickPanel.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConcealerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        <state relative-caret-position="408">
+          <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1227#1228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/LipstickController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="55" column="72" selection-start-line="55" selection-start-column="72" selection-end-line="55" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.48/mysql-connector-java-5.1.48.jar!/com/mysql/jdbc/ConnectionImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="302">
+          <caret line="2688" selection-start-line="2688" selection-end-line="2688" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/MascaraController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="131">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1205#1206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ConcealerPanel.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="34" column="96" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/MascaraPanel.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="32" column="94" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/admin.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -642,7 +717,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>mysql:mysql-connector-java:5.1.40</last-edited>
+          <last-edited>mysql:mysql-connector-java:5.1.48</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

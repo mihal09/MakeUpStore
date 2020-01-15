@@ -17,18 +17,20 @@ public class Main extends Application {
 
     public static Stage stage;
     @FXML
-    Button buttonAddLispstick, buttonAddConcealer, buttonAddMascara;
+    Button buttonAddLipstick, buttonAddConcealer, buttonAddMascara;
 
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        Database.getInstance().setConnection("root", "haslo1");
+
         stage = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("../../resources/admin.fxml"));
-        buttonAddLispstick = (Button) root.lookup("#buttonAddLispstick");
+        buttonAddLipstick = (Button) root.lookup("#buttonAddLipstick");
         buttonAddConcealer = (Button) root.lookup("#buttonAddConcealer");
         buttonAddMascara = (Button) root.lookup("#buttonAddMascara");
 
-        buttonAddLispstick.setOnAction(new EventHandler<ActionEvent>() {
+        buttonAddLipstick.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 Parent root = null;

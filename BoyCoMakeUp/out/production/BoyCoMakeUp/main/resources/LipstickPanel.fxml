@@ -10,27 +10,29 @@
 
 <AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.sample.Main">
     <children>
-        <Button id="buttonSubmit" layoutX="114.0" layoutY="335.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="118.0" text="Add mascara" />
+        <Button id="buttonSubmit" layoutX="114.0" layoutY="335.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="118.0" text="Add lipstick" />
       <TextField id="fieldColorID" layoutX="115.0" layoutY="139.0" />
       <Text layoutX="42.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color ID" />
-      <ChoiceBox id="fieldBrush" layoutX="114.0" layoutY="180.0" prefWidth="150.0">
+      <ChoiceBox id="fieldFormula" layoutX="114.0" layoutY="180.0" prefWidth="150.0">
         <items>
           <FXCollections fx:factory="observableArrayList">
-            <String fx:id="silicone" fx:value="silicone" />
-            <String fx:id="tradicional" fx:value="tradicional" />
+            <String fx:id="liquid" fx:value="liquid" />
+            <String fx:id="cream" fx:value="cream" />
+            <String fx:id="gloss" fx:value="gloss" />
           </FXCollections>
         </items>
       </ChoiceBox>
-      <Text layoutX="42.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brush" />
-      <ChoiceBox id="fieldEffect" layoutX="114.0" layoutY="221.0" prefWidth="150.0">
+      <Text layoutX="42.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formula" />
+      <ChoiceBox id="fieldFinish" layoutX="114.0" layoutY="221.0" prefWidth="150.0">
         <items>
           <FXCollections fx:factory="observableArrayList">
-            <String fx:id="volume" fx:value="volume" />
-            <String fx:id="lifting" fx:value="lifting" />
+            <String fx:id="matte" fx:value="matte" />
+            <String fx:id="satin" fx:value="satin" />
+            <String fx:id="glossy" fx:value="glossy" />
           </FXCollections>
         </items>
       </ChoiceBox>
-      <Text layoutX="42.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Effect" />
+      <Text layoutX="42.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Finish" />
       <Text layoutX="42.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill weight" />
       <TextField id="fieldFillWeight" layoutX="115.0" layoutY="265.0" />
       <Text layoutX="42.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand ID" />
