@@ -14,5 +14,6 @@
       <Button id="buttonCancelUpdateSale" layoutX="358.0" layoutY="153.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="179.0" text="Cancel/Update Sale" />
       <Button id="buttonPlanDelivery" layoutX="147.0" layoutY="199.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="179.0" text="Plan Delivery" />
       <Button id="buttonPlanSale" layoutX="359.0" layoutY="199.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="179.0" text="Plan Sale" />
+      <Button id="buttonAdminPanel" layoutX="260.0" layoutY="292.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="179.0" text="Admin panel" />
     </children>
 </AnchorPane>

@@ -65,6 +65,13 @@ public class PlanDeliveryController {
         int productId = Integer.parseInt(fieldProductID.getText());
         int quantity = Integer.parseInt(fieldQuantity.getText());
         productsList.add(new Pair<>(productId, quantity));
+
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle(null);
+        alert.setHeaderText(null);
+        alert.setContentText("Added product with id " + productId + ", amount: "+quantity);
+        alert.showAndWait();
     }
 
     private void accept() {
