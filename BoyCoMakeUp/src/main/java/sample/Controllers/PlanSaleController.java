@@ -85,16 +85,18 @@ public class PlanSaleController {
         try (
                 Connection conn = Database.getInstance().getConnection()
         ) {
-            String query = "{CALL plan_sale(?,?,?,?)}";
+            String query = "{CALL plan_sale(?,?,?,?,?)}";
             CallableStatement stmt = conn.prepareCall(query);
 
             Date date =  Date.valueOf(fieldSaleDate.getValue());
             stmt.registerOutParameter(1, Type.BOOLEAN);
-            stmt.setInt(2, Integer.parseInt(fieldClientID.getText()));
-            stmt.setDate(3, date);
-            stmt.setString(4,request);
+            stmt.registerOutParameter(2, Type.INT);
+            stmt.setInt(3, Integer.parseInt(fieldClientID.getText()));
+            stmt.setDate(4, date);
+            stmt.setString(5,request);
             ResultSet rs = stmt.executeQuery();
             Boolean isSuccess = stmt.getBoolean(1);
+            int resultID = stmt.getInt(2);
 
             if(!isSuccess){
                 Alert alert = new Alert(Alert.AlertType.WARNING);
@@ -107,7 +109,7 @@ public class PlanSaleController {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle(null);
                 alert.setHeaderText(null);
-                alert.setContentText("New sale added!");
+                alert.setContentText("New sale with id "+resultID+" added!");
                 alert.showAndWait();
             }
         } catch(Exception e) {

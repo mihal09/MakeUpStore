@@ -1,5 +1,6 @@
 package main.java.sample.Controllers;
 
+import com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -13,10 +14,7 @@ import javafx.stage.Stage;
 import javafx.util.Pair;
 import main.java.sample.Database;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.ResultSet;
+import java.sql.*;
 import java.util.ArrayList;
 
 
@@ -83,18 +81,20 @@ public class PlanDeliveryController {
         try (
                 Connection conn = Database.getInstance().getConnection()
         ) {
-            String query = "{CALL plan_delivery(?,?)}";
+            String query = "{CALL plan_delivery(?,?,?)}";
             CallableStatement stmt = conn.prepareCall(query);
 
             Date date =  Date.valueOf(fieldDeliveryDate.getValue());
-            stmt.setDate(1, date);
-            stmt.setString(2,request);
+            stmt.registerOutParameter(1, Types.INTEGER);
+            stmt.setDate(2, date);
+            stmt.setString(3,request);
             ResultSet rs = stmt.executeQuery();
+            int resultID = stmt.getInt(1);
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle(null);
             alert.setHeaderText(null);
-            alert.setContentText("New delivery added!");
+            alert.setContentText("New delivery with id "+resultID+" added!");
             alert.showAndWait();
         } catch(Exception e) {
             Alert alert = new Alert(Alert.AlertType.WARNING);

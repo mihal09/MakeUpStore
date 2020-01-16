@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="70.0" layoutY="341.0" />
+      <Button id="buttonShowUsers" layoutX="496.0" layoutY="134.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="176.0" text="Show Users" />
+      <Label id="labelRole" layoutX="104.0" layoutY="140.0" text="Role" />
+      <TextField id="fieldRole" layoutX="213.0" layoutY="134.0" />
+      <Label id="labelViewUsers" layoutX="283.0" layoutY="51.0" text="View users">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <ListView id="listViewUsers" layoutX="132.0" layoutY="229.0" prefHeight="238.0" prefWidth="411.0" />
+   </children>
+</AnchorPane>

@@ -17,7 +17,7 @@ GRANT admin TO `admin`@`localhost`;
 
 SET DEFAULT ROLE employee TO `employee`@`localhost`;
 SET DEFAULT ROLE boss TO `boss`@`localhost`;
-SET DEFAULT ROLE admin TO.colors TO employee;
+SET DEFAULT ROLE admin TO `admin`@`localhost`;
 
 GRANT SELECT ON makeup.lipsticks TO employee;
 GRANT SELECT ON makeup.concealers TO employee;
@@ -57,6 +57,9 @@ GRANT EXECUTE ON PROCEDURE makeup.update_deliveries TO employee;
 GRANT EXECUTE ON PROCEDURE makeup.update_sale TO employee;
 GRANT EXECUTE ON PROCEDURE makeup.amount_on_date TO employee;
 GRANT EXECUTE ON PROCEDURE makeup.user_status TO employee;
+GRANT EXECUTE ON FUNCTION makeup.is_nip_valid TO employee;
+GRANT EXECUTE ON FUNCTION makeup.is_nip_valid TO employee;
+
 
 GRANT EXECUTE ON PROCEDURE makeup.add_lipstick TO boss;
 GRANT EXECUTE ON PROCEDURE makeup.add_mascara TO boss;
@@ -66,6 +69,7 @@ GRANT EXECUTE ON PROCEDURE makeup.add_brand TO boss;
 GRANT EXECUTE ON PROCEDURE makeup.add_user TO admin;
 GRANT EXECUTE ON PROCEDURE makeup.remove_user TO admin;
 GRANT EXECUTE ON PROCEDURE makeup.change_permissions TO admin;
+GRANT EXECUTE ON PROCEDURE makeup.select_user TO admin;
 
 
 GRANT DELETE ON makeup.users TO admin;
@@ -74,6 +78,6 @@ GRANT DELETE ON makeup.users TO admin;
 GRANT SELECT ON proc TO employee;
 
 --those are needed for backup & restore functionallity
-GRANT SELECT, LOCK TABLES ON makeup.* TO 'admin'@'localhost';
+GRANT REFERENCES, SELECT, LOCK TABLES ON makeup.* TO 'admin'@'localhost';
 GRANT DROP, CREATE, ALTER ON makeup.* TO 'admin'@'localhost';
 GRANT SUPER ON *.* TO 'admin'@'localhost';

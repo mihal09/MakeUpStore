@@ -34,5 +34,7 @@
          </items>
       </ChoiceBox>
       <ChoiceBox id="fieldChangePermission" layoutX="212.0" layoutY="427.0" prefWidth="150.0" visible="false" />
+      <Button id="buttonSaveBackup" layoutX="164.0" layoutY="337.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="176.0" text="Make Backup" />
+      <Button id="buttonLoadBackup" layoutX="362.0" layoutY="337.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="176.0" text="Load Backup" />
    </children>
 </AnchorPane>

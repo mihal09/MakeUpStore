@@ -11,6 +11,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.scene.control.Button;
+import main.java.sample.Controllers.AdminController;
 
 import java.io.IOException;
 
@@ -51,6 +52,7 @@ public class Main extends Application {
                 }
             }
         });
+
 
         primaryStage.setTitle("BoyCo MakeUp");
         primaryStage.setScene(new Scene(root));

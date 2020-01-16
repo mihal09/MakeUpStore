@@ -14,6 +14,6 @@
       <TextField id="fieldName" layoutX="322.0" layoutY="87.0" />
       <Text layoutX="246.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIP" />
       <TextField id="fieldNIP" layoutX="322.0" layoutY="127.0" />
-      <Button id="buttonCheckNIP" fx:id="buttonSubmit1" layoutX="537.0" layoutY="127.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="102.0" text="Check NIP" />
+      <Button id="buttonCheckNIP" fx:id="buttonSubmit1" layoutX="537.0" layoutY="127.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="102.0" text="Check NIP" visible="false" />
     </children>
 </AnchorPane>

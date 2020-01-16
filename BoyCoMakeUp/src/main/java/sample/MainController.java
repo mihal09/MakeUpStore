@@ -21,7 +21,7 @@ public class MainController{
     @FXML
     Button buttonAddLipstick, buttonAddConcealer, buttonAddMascara;
     @FXML
-    Button buttonAddBrand, buttonAddClient;
+    Button buttonAddBrand, buttonAddClient, buttonShowUsers;
     @FXML
     Button buttonCancelUpdateDelivery, buttonCancelUpdateSale;
     @FXML
@@ -50,6 +50,8 @@ public class MainController{
         buttonPlanSale = (Button) root.lookup("#buttonPlanSale");
 
         buttonAdminPanel  = (Button) root.lookup("#buttonAdminPanel");
+        buttonShowUsers = (Button) root.lookup("#buttonShowUsers");
+
 
         /*PERMISSION LEVEL:
         0 -> error
@@ -198,6 +200,20 @@ public class MainController{
                 }
             }
         });
+
+        buttonShowUsers.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                Parent root = null;
+                try {
+                    root = FXMLLoader.load(getClass().getResource("../../resources/SelectPanel.fxml"));
+                    new SelectPanelController(root);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
 
         Main.stage.setTitle("BoyCo MakeUp");
         Main.stage.setScene(new Scene(root));

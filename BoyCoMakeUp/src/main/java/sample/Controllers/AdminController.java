@@ -3,6 +3,7 @@ package main.java.sample.Controllers;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -12,6 +13,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import main.java.sample.Database;
 
+import java.io.IOException;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -20,7 +22,7 @@ import java.sql.ResultSet;
 public class AdminController {
 
     @FXML
-    Button buttonAddUser, buttonRemoveUser, buttonChangePermission;
+    Button buttonAddUser, buttonRemoveUser, buttonChangePermission, buttonSaveBackup, buttonLoadBackup, buttonShowUsers;
     @FXML
     TextField fieldLogin, fieldPassword, fieldUserIDRemoveUser, fieldUserIDChangePermission;
     @FXML
@@ -32,6 +34,8 @@ public class AdminController {
         buttonAddUser = (Button) root.lookup("#buttonAddUser");
         buttonRemoveUser = (Button) root.lookup("#buttonRemoveUser");
         buttonChangePermission = (Button) root.lookup("#buttonChangePermission");
+        buttonSaveBackup = (Button) root.lookup("#buttonSaveBackup");
+        buttonLoadBackup = (Button) root.lookup("#buttonLoadBackup");
 
         fieldLogin = (TextField) root.lookup("#fieldLogin");
         fieldPassword = (TextField) root.lookup("#fieldPassword");
@@ -48,6 +52,18 @@ public class AdminController {
                 add_user();
             }
         });
+        buttonSaveBackup.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                save_backup();
+            }
+        });
+        buttonLoadBackup.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                load_backup();
+            }
+        });
         buttonRemoveUser.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -55,13 +71,19 @@ public class AdminController {
             }
         });
 
-
-
         //Stage stage = Main.stage;
         Stage stage = new Stage();
         stage.setTitle("Manage delivery");
         stage.setScene(new Scene(root));
         stage.show();
+    }
+
+    private void save_backup() {
+        Database.getInstance().save_backup();
+    }
+
+    private void load_backup() {
+        Database.getInstance().load_backup();
     }
 
     private void add_user() {
