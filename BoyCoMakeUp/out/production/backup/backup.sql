@@ -142,7 +142,7 @@ CREATE TABLE `deliveries` (
   PRIMARY KEY (`delivery_id`),
   KEY `deliveriesDateIndex` (`delivery_date`) USING BTREE,
   KEY `deliveriesDoneIndex` (`done`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -151,7 +151,7 @@ CREATE TABLE `deliveries` (
 
 LOCK TABLES `deliveries` WRITE;
 /*!40000 ALTER TABLE `deliveries` DISABLE KEYS */;
-INSERT INTO `deliveries` VALUES (3,'2020-02-12',1),(5,'2020-02-12',1),(9,NULL,1),(10,'2020-02-24',1),(11,'2020-02-01',1),(12,'2020-01-31',0),(13,'2020-01-08',0),(14,'2020-01-01',0);
+INSERT INTO `deliveries` VALUES (3,'2020-02-12',1),(5,'2020-02-12',1),(9,NULL,1),(10,'2020-02-24',1),(11,'2020-02-01',1),(12,'2020-01-31',0),(13,'2020-01-08',0),(14,'2020-01-01',0),(15,'2020-01-25',0),(16,'2020-01-22',1),(17,'2020-01-22',1),(18,'2020-01-23',0),(19,'2020-01-24',0);
 /*!40000 ALTER TABLE `deliveries` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -179,7 +179,7 @@ CREATE TABLE `deliveries_details` (
 
 LOCK TABLES `deliveries_details` WRITE;
 /*!40000 ALTER TABLE `deliveries_details` DISABLE KEYS */;
-INSERT INTO `deliveries_details` VALUES (3,1,10),(3,2,20),(3,3,30),(5,1,10),(5,2,20),(10,1,1),(10,2,2222),(10,3,33333),(11,4,12),(11,5,15),(11,6,16),(12,4,1333),(12,5,2222),(14,2,32);
+INSERT INTO `deliveries_details` VALUES (3,1,10),(3,2,20),(3,3,30),(5,1,10),(5,2,20),(10,1,1),(10,2,2222),(10,3,33333),(11,4,12),(11,5,15),(11,6,16),(12,4,1333),(12,5,2222),(14,2,32),(16,5,55),(17,15,999),(18,5,999),(19,10,100);
 /*!40000 ALTER TABLE `deliveries_details` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -367,4 +367,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-01-16 16:19:33
+-- Dump completed on 2020-01-20  0:44:08

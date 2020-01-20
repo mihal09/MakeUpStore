@@ -61,6 +61,7 @@ public class MainController{
         */
         if(permissionLevel<3){ //hide admin only
             buttonAdminPanel.setVisible(false);
+            buttonShowUsers.setVisible(false);
             //addUser
             //removeUser
             //changePermission

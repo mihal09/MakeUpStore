@@ -104,12 +104,85 @@ DELIMITER ;
 
 --procedures-------------------------------------------------------------------------------------
 
+DELIMITER //
+CREATE PROCEDURE user_status(OUT status INT)
+  BEGIN
+	SELECT CURRENT_ROLE() INTO @role;
+	SELECT @role AS 'ELUWA1';
+	SELECT SUBSTR(@role, 2, LOCATE('@',@role)-3) INTO @role;
+	SELECT @role AS 'ELUWA2';
+	SELECT 
+	IF @role = 'admin' THEN
+		SELECT 3 INTO status;
+	ELSEIF @role = 'boss' THEN
+		SELECT 2 INTO status;
+	ELSEIF @role = 'employee' THEN
+		SELECT 1 INTO status;
+	ELSE 
+		SELECT 0 INTO status;
+	END IF;
+  END //
+DELIMITER ;
 
 --admin------------------------------------------------------------------------------------------
 
 DELIMITER //
-CREATE PROCEDURE add_user(IN input_login varchar(30), IN input_password varchar(100), IN input_type enum('admin', 'boss', 'employee'))
+CREATE PROCEDURE add_user(
+IN input_login varchar(30),
+IN input_password varchar(100),
+IN input_type enum('admin', 'boss', 'employee'))
   BEGIN
+	SET @query = CONCAT("CREATE USER IF NOT EXISTS `",input_login,"`@`localhost` IDENTIFIED BY '",input_password,"'");
+	PREPARE query FROM @query;
+	EXECUTE query;
+	DEALLOCATE PREPARE query;
+	
+	SET @query = CONCAT("GRANT ",input_type," TO `",input_login,"`@`localhost`");
+	SELECT @query;
+	PREPARE query FROM @query;
+	EXECUTE query;
+	DEALLOCATE PREPARE query;
+	
+	SET @query = CONCAT("SET DEFAULT ROLE ",input_type," TO `",input_login,"`@`localhost`");
+	SELECT @query;
+	PREPARE query FROM @query;
+	EXECUTE query;
+	DEALLOCATE PREPARE query;
+	
+	GRANT EXECUTE ON PROCEDURE makeup.user_status TO employee;
+	GRANT EXECUTE ON PROCEDURE makeup.add_client TO employee;
+	GRANT EXECUTE ON PROCEDURE makeup.plan_delivery TO employee;
+	GRANT EXECUTE ON PROCEDURE makeup.plan_sale TO employee;
+	GRANT EXECUTE ON PROCEDURE makeup.cancel_delivery TO employee;
+	GRANT EXECUTE ON PROCEDURE makeup.cancel_sale TO employee;
+	GRANT EXECUTE ON PROCEDURE makeup.update_delivery TO employee;
+	GRANT EXECUTE ON PROCEDURE makeup.update_sale TO employee;
+	GRANT EXECUTE ON FUNCTION  makeup.amount_on_date TO employee;
+	GRANT EXECUTE ON PROCEDURE makeup.user_status TO employee;
+
+
+	GRANT EXECUTE ON PROCEDURE makeup.add_lipstick TO boss;
+	GRANT EXECUTE ON PROCEDURE makeup.add_mascara TO boss;
+	GRANT EXECUTE ON PROCEDURE makeup.add_concealer TO boss;
+	GRANT EXECUTE ON PROCEDURE makeup.add_brand TO boss;
+	
+
+	GRANT EXECUTE ON PROCEDURE makeup.add_user TO admin;
+	GRANT EXECUTE ON PROCEDURE makeup.remove_user TO admin;
+	GRANT EXECUTE ON PROCEDURE makeup.change_permissions TO admin;
+	GRANT EXECUTE ON PROCEDURE makeup.select_user TO admin;
+	
+	GRANT SELECT, LOCK TABLES ON makeup.* TO admin;
+	GRANT DROP, CREATE, ALTER ON makeup.* TO admin;
+
+	
+	SET @query = CONCAT("SET DEFAULT ROLE ",input_type," TO `",input_login,"`@`localhost`");
+	SELECT @query;
+	PREPARE query FROM @query;
+	EXECUTE query;
+	DEALLOCATE PREPARE query;
+	
+	
 	PREPARE query FROM
 	'INSERT INTO users(login, password, type)
     VALUES (?, SHA2(?, 256), ?)';
@@ -120,6 +193,33 @@ CREATE PROCEDURE add_user(IN input_login varchar(30), IN input_password varchar(
 	
 	EXECUTE query USING @input_login, @input_password, @input_type;
 	DEALLOCATE PREPARE query;
+	FLUSH PRIVILEGES;
+  END //
+DELIMITER ;
+
+DELIMITER //
+CREATE PROCEDURE user_status(OUT status INT, IN input_login varchar(30), IN input_password varchar(100))
+  BEGIN
+	PREPARE query FROM
+	'SELECT type INTO @type FROM users WHERE 
+	login = ? AND 
+	password = SHA2(?, 256)';
+	
+	SET @input_login = input_login;
+	SET @input_password = input_password;
+
+	EXECUTE query USING @input_login, @input_password;
+	DEALLOCATE PREPARE query;
+	
+	IF @type = 'admin' THEN
+		SELECT 3 INTO status;
+	ELSEIF @type = 'boss' THEN
+		SELECT 2 INTO status;
+	ELSEIF @type = 'employee' THEN
+		SELECT 1 INTO status;
+	ELSE 
+		SELECT 0 INTO status;
+	END IF;
   END //
 DELIMITER ;
 
@@ -127,13 +227,26 @@ DELIMITER //
 CREATE PROCEDURE remove_user(IN input_user_id INT)
   BEGIN
 	PREPARE query FROM
-	'DELETE FROM users
+	'SELECT login INTO @login FROM users
     WHERE user_id  = ?';
-	
 	SET @input_user_id = input_user_id;
-	
 	EXECUTE query USING @input_user_id;
 	DEALLOCATE PREPARE query;
+	
+	
+	
+	PREPARE query FROM
+	'DELETE FROM users
+    WHERE user_id  = ?';
+	SET @input_user_id = input_user_id;
+	EXECUTE query USING @input_user_id;
+	DEALLOCATE PREPARE query;
+	
+	SET @query = CONCAT("DROP USER `",@login,"`@'localhost'");
+	PREPARE query FROM @query;
+	EXECUTE query;
+	DEALLOCATE PREPARE query;
+
   END //
 DELIMITER ;
 
@@ -158,28 +271,16 @@ DELIMITER ;
 --boss---------------------------------------------------------------------------------------------------
 
 DELIMITER //
-CREATE PROCEDURE add_product(
-IN input_brand_id INT,
-input_name varchar(50), 
-input_type enum ('lipstick', 'concealer', 'mascara'),
-input_price decimal(5, 2) UNSIGNED,
-input_quantity INT,
-OUT id INT)
+CREATE PROCEDURE select_user(
+input_type enum ('admin', 'boss', 'employee')
+)
   BEGIN
 	PREPARE query FROM
-	'INSERT INTO products(brand_id, name, type, price, quantity)
-    VALUES (?, ?, ?, ?, ?)';
-	
-	SET @input_brand_id = input_brand_id;
-	SET @input_name = input_name;
-	SET @input_type =  input_type;
-	SET @input_price = input_price;
-	SET @input_quantity = input_quantity;
-
-	EXECUTE query USING @input_brand_id, @input_name, @input_type, @input_price, @input_quantity;
+	'SELECT login FROM users
+    WHERE type= ? ';
+	SET @input_type = input_type;
+	EXECUTE query USING @input_type;
 	DEALLOCATE PREPARE query;
-
-	SELECT get_last_id() INTO id;
   END //
 DELIMITER ;
 
@@ -281,7 +382,7 @@ DELIMITER ;
 
 DELIMITER //
 CREATE PROCEDURE add_brand(
-  input_nam VARCHAR(50),
+  input_name VARCHAR(50),
   input_nip CHAR(10),
   input_address VARCHAR(100))
   BEGIN
@@ -322,6 +423,7 @@ DELIMITER ;
 
 DELIMITER //
 CREATE PROCEDURE plan_delivery(
+  OUT out_id INT,
   input_delivery_date date,
   input_delivery_details text)
   BEGIN
@@ -347,6 +449,7 @@ CREATE PROCEDURE plan_delivery(
 	DEALLOCATE PREPARE query;
 	
 	SELECT MAX(delivery_id) INTO @delivery_id FROM deliveries;
+	SELECT @delivery_id INTO out_id;
 	
 	productsLoop: LOOP
 		IF (LOCATE(';', @input_delivery_details) = 0) THEN
@@ -374,19 +477,22 @@ DELIMITER ;
 
 DELIMITER //
 CREATE PROCEDURE plan_sale(
-  input_client_id int,
-  input_sale_date date,
-  input_sale_details text)
+  OUT out_success BOOLEAN,
+  OUT out_id INT,
+  IN input_client_id int,
+  IN input_sale_date date,
+  IN input_sale_details text)
   BEGIN
-	
+	DECLARE success BOOLEAN;
 	/*exception handling*/
 	DECLARE EXIT HANDLER FOR SQLEXCEPTION 
 	BEGIN
       ROLLBACK;
-	  SHOW ERRORS;
+	  SET success = 0;
 	  SET autocommit = 1;
 	END;
 	
+	SET success = 1;
 	SET autocommit = 0;
 	START TRANSACTION;
 	
@@ -402,6 +508,7 @@ CREATE PROCEDURE plan_sale(
 	DEALLOCATE PREPARE query;
 	
 	SELECT MAX(sale_id) INTO @sale_id FROM sales;
+	SELECT @sale_id INTO out_id;
 	
 	productsLoop: LOOP
 		IF (LOCATE(';', @input_sale_details) = 0) THEN
@@ -421,11 +528,18 @@ CREATE PROCEDURE plan_sale(
 		DEALLOCATE PREPARE query;
 		
 		IF amount_on_date(@product_id, @input_sale_date) < 0 THEN
+			SET success = 0;
 			SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Not enough available products for sale';
 		END IF;
 		
 	END LOOP productsLoop;
-	COMMIT;
+	IF success = 1 THEN
+		COMMIT;
+	ELSE
+		ROLLBACK;
+	END IF;
+	SELECT success INTO out_success;
+
 	SET autocommit = 1;
   END //
 DELIMITER ;
@@ -434,12 +548,25 @@ DELIMITER ;
 DELIMITER //
 CREATE PROCEDURE cancel_delivery(IN input_delivery_id INT)
   BEGIN
+  	SET @input_delivery_id = input_delivery_id;
+	PREPARE query FROM
+	'SELECT COUNT(*) INTO @amount FROM deliveries
+	WHERE delivery_id  = ?
+	AND done = 0';
+	EXECUTE query USING @input_delivery_id;
+	DEALLOCATE PREPARE query;
+	
+	
+	IF @amount <> 1 THEN
+		SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Cannot cancel delivery';
+	END IF;
+	
 	PREPARE query FROM
 	'DELETE FROM deliveries
     WHERE delivery_id  = ?
 	AND done = 0';
 	
-	SET @input_delivery_id = input_delivery_id;
+	
 	
 	EXECUTE query USING @input_delivery_id;
 	DEALLOCATE PREPARE query;
@@ -449,12 +576,24 @@ DELIMITER ;
 DELIMITER //
 CREATE PROCEDURE cancel_sale(IN input_sale_id INT)
   BEGIN
+	SET @input_sale_id = input_sale_id;
+	PREPARE query FROM
+	'SELECT COUNT(*) INTO @amount FROM sales
+	WHERE sale_id  = ?
+	AND done = 0';
+	EXECUTE query USING @input_sale_id;
+	DEALLOCATE PREPARE query;
+		
+	IF @amount <> 1 THEN
+		SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Cannot cancel sale';
+	END IF;
+	
 	PREPARE query FROM
 	'DELETE FROM sales
     WHERE sale_id  = ?
 	AND done = 0';
 	
-	SET @input_sale_id = input_sale_id;
+
 	
 	EXECUTE query USING @input_sale_id;
 	DEALLOCATE PREPARE query;
@@ -465,12 +604,25 @@ DELIMITER ;
 DELIMITER //
 CREATE PROCEDURE update_delivery(IN input_delivery_id INT)
   BEGIN
+	SET @input_delivery_id = input_delivery_id;
+	PREPARE query FROM
+	'SELECT COUNT(*) INTO @amount FROM deliveries
+	WHERE delivery_id  = ?
+	AND done = 0';
+	EXECUTE query USING @input_delivery_id;
+	DEALLOCATE PREPARE query;
+	
+	
+	IF @amount <> 1 THEN
+		SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Cannot update delivery';
+	END IF;
+	
+	
 	PREPARE query FROM
 	'UPDATE deliveries
 	SET done = 1
 	WHERE delivery_id  = ?
 	AND done = 0';
-	SET @input_delivery_id = input_delivery_id;
 	
 	EXECUTE query USING @input_delivery_id;
 	DEALLOCATE PREPARE query;
@@ -480,12 +632,24 @@ DELIMITER ;
 DELIMITER //
 CREATE PROCEDURE update_sale(IN input_sale_id INT)
   BEGIN
+	SET @input_sale_id = input_sale_id;
+	PREPARE query FROM
+	'SELECT COUNT(*) INTO @amount FROM sales
+	WHERE sale_id  = ?
+	AND done = 0';
+	EXECUTE query USING @input_sale_id;
+	DEALLOCATE PREPARE query;
+		
+	IF @amount <> 1 THEN
+		SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Cannot update sale';
+	END IF;
+	
+	
 	PREPARE query FROM
 	'UPDATE sales
 	SET done = 1
 	WHERE sale_id  = ?
 	AND done = 0';
-	SET @input_sale_id = input_sale_id;
 	
 	EXECUTE query USING @input_sale_id;
 	DEALLOCATE PREPARE query;
